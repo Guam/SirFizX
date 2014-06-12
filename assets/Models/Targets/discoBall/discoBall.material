@@ -1,0 +1,15 @@
+material Translucent_Glass_Gray
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 0.945098039215686 0.945098039215686 0.945098039215686 0.5
+         ambient 0.945098039215686 0.945098039215686 0.945098039215686 0.5
+      }
+   }
+}
+

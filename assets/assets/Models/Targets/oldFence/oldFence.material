@@ -1,0 +1,48 @@
+material 0035_Tan
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.662745098039216 0.568627450980392 0.490196078431373 1.0
+         ambient 0.662745098039216 0.568627450980392 0.490196078431373 1.0
+      }
+   }
+}
+
+material Fence1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture FENCE01.JPG
+         }
+      }
+   }
+}
+
+material Fence1_distort_1
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture FENCE011.JPG
+         }
+      }
+   }
+}
+

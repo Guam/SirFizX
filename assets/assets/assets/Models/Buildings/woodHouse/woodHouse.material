@@ -1,0 +1,476 @@
+material Janela
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Janela.jpg
+         }
+      }
+   }
+}
+
+material rufo
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_1
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo1.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_2
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo2.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_3
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo3.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_4
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo4.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_5
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo5.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_6
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo6.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_7
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo7.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_8
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo8.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_9
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo9.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_10
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo10.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_11
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo11.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_12
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo12.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_13
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo13.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_14
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo14.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_15
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo15.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_16
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo16.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_17
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo17.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_18
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo18.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_19
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo19.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_20
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo20.jpg
+         }
+      }
+   }
+}
+
+material rufo_distort_21
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture rufo21.jpg
+         }
+      }
+   }
+}
+
+material Basculante
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Basculante.jpg
+         }
+      }
+   }
+}
+
+material Wood_house
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Wood_house.jpg
+         }
+      }
+   }
+}
+
+material cerca_wood
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+         depth_check on
+         depth_write off
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture cerca_wood.png
+         }
+      }
+   }
+}
+
+material Brick_Antique
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Brick_Antique.jpg
+         }
+      }
+   }
+}
+
+material Stone_Coursed_Rough
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Stone_Coursed_Rough.jpg
+         }
+      }
+   }
+}
+
+material Porta_3
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture Porta_3.jpg
+         }
+      }
+   }
+}
+
+material roof
+{
+   technique
+   {
+      pass
+      {
+         diffuse 1 1 1 1.0
+         texture_unit
+         {
+            texture roof.jpg
+         }
+      }
+   }
+}
+
+material SketchupDefault
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.890196078431373 0.882352941176471 0.870588235294118
+         ambient 0.890196078431373 0.882352941176471 0.870588235294118
+      }
+   }
+}
+
+material SketchupDefault_Back
+{
+   technique
+   {
+      pass
+      {
+         diffuse 0.545098039215686 0.533333333333333 0.603921568627451
+         ambient 0.545098039215686 0.533333333333333 0.603921568627451
+      }
+   }
+}

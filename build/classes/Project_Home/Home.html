@@ -1,0 +1,92 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SirFizx</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h2>Simple Demo Applet made with FizX FP</h2>
+        <div align="left">
+            Click twice to start.   Press ESC to pause.  (May take some time to load for slow connections.)
+        </div>
+        <h4>Submit a name in the form below to see it immediately show up in the 3D Game.</h4>
+        <iframe src="applet/run-applet.html" name="test2" seamless="seamless" width="830" height="630" scrollbar="none"></iframe>
+        <h2>Submit a name and it will appear in the 3D game applet.</h2>
+        <form action="php/setNameOfFirstRow.php" method="POST" onSubmit="return validate();">
+        First Name: <input name="first" type="text" size="25" />
+        Last Name: <input name="last" type="text" size="25" />
+        <input type="submit" value="validate and submit"/>
+        </form>
+
+        <script>
+          function validate(){
+            // do your validation here
+
+            // call reload shortly after expected db update time
+            window.setTimout("reloadIFrame();", 3000);
+            return true; // return true if validation was ok, false otherwise
+          }
+        
+          function reloadIFrame() {
+             document.frames["test2"].location.reload();
+          }
+        </script>
+        <a href="https://www.youtube.com/watch?v=ekyROhih55M">POST COMMENTS HERE</a>
+        <br>
+        <h2>Code for this example class which extends the FizX FP base application class.</h2>
+        <script src="http://pastebin.com/embed_js.php?i=GzXyjKZs"></script>
+        <br>
+        <h2>FizX FP Features Illustrated in this Applet</h2>
+        <div>
+            Destructible billboard target, made in Sketchup, with data read from MySql table, is added with one line of code. (Points added when shot.)
+            <br>
+            Building made in Sketchup added with one line of code.
+            <br>
+            Shooting enabled with default bomb shooter weapon in one line of code.
+            <br>
+            Working lampost added with one line of code.
+            <br>
+            Indestructible barrel added with one line of code.
+            <br>
+            16 Destructible target barrels set in vertical grid in sky with one line of code.
+            (Points added when shot.)
+            <br>
+            Indestructible spiky cube target added with one line of code. (Points added when shot.)
+            <br>
+            Two copies fence model, made in Sketchup, added in two lines of code.
+            <br>
+            Sky was added with one line of code.
+            <br>
+            Terrain was added with one line of code.
+            <br>
+            A display of the vertical cam angle was added with one line of code.
+            <br>
+            Ghost added with one line of code.
+            <br>
+            Fire effects were each added with one line of code.
+            <br>
+            Lame Sketchup animated disco ball added with one line of code.
+        </div>
+        <h2>Overview of FizX FP JME3 Helper Library</h2>
+        <div>
+            This library is built on jMonkey Engine Version 3.  You build easy physics based 3d games by extending a base application class containing many useful methods. The base application class holds references to manager classes, most of which have their own specialized control classes. The base application methods along with helpful public constants enable fairly rich 3d games to be made with minimal coding.
+
+            The mission of this project is to further develop and distribute this helper library to encourage novice developers in their skill development and provide a forum where expert developers can share their experience.
+        </div>
+        <h2>Some TODO's</h2>
+        <div>
+            Get 3D sound working in applet (Already tested and working in Windows executable.)
+            <br>
+            Stop some managers from extending Node class
+            <br>
+            Create gun weapon that puts effect at point of impact.
+            <br>
+            Incorporate more game states into library
+        </div>
+        <b>Unique Visitor Count:  </b><img src="/cgi-sys/Count.cgi?df=sirfizx-001.dat|display=Counter|ft=6|md=5|frgb=100;139;216|dd=A|reload=F">
+    </body>
+</html>
