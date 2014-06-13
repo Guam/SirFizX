@@ -19,11 +19,9 @@ import fizxFP.FizXBaseApp;
 
 
 /**
- * <code>BldgManager</code> extends the {@link com.jme3.scene.Geometry}
+ * <code>GUIManager</code> extends the {@link com.jme3.app.state.AbstractAppState}
  * class to provide an easy means to organize and control interactions with
- * a single building asset. The next version will extend the {@link com.jme3.scene.Node}
- * class to provide means by which multiple building assets could be
- * managed with a single class object. 
+ * the graphical user interface.
  */
 public class GUIManager extends AbstractAppState implements ScreenController{
   
