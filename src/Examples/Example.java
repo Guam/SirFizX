@@ -1,9 +1,9 @@
 package Examples;
 
 /*
- * This is an early example of a use case for a small helper library
- * to enable beginners to obtain a somewhat descent result 
- * with fairly little coding.
+ * This is an early example application built with the fizxFP library.
+ * Please note that use of the fizxFP library requires an expected
+ * structure within the Project Assets.
  */
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.RenderManager;
