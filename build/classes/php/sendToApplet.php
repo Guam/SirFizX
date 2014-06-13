@@ -7,9 +7,9 @@
  
 		// Connect database.
 		$host="localhost";
-		$db_user="sirfizx_test"; //Whatever your user name is
-		$db_password="3L39af99U11";
-		$database="sirfizx_test";
+		$db_user="yourusername"; //Whatever your user name is
+		$db_password="yourpass";
+		$database="yourdbname";
 		$db = mysql_connect($host,$db_user,$db_password);
 		if (!($db)){
 			echo "SQL ERROR: Connection failed: "; //I echo this so it responds to Java applet

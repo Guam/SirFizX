@@ -34,7 +34,7 @@ public class MysqlConnect{
 
 		byte[] parameterAsBytes = parametersAsString.getBytes(); 
 
-		URL url = new URL("http://sirfizx.x10.mx/apps/java/test2/php/sendToApplet.php");
+		URL url = new URL("http://yourhost/apps/java/test/php/sendToApplet.php");
 		
 		URLConnection con = url.openConnection(); 
 		((HttpURLConnection) con).setRequestMethod("POST");
