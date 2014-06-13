@@ -31,8 +31,7 @@ public class GUIManager extends AbstractAppState implements ScreenController{
     public boolean hasStartScreen = false;
     private boolean camAngleShowing = false;
     /**
-     * Simple constructor used when you want an early handle on the building
-     * manager yet don't wish to add any buildings at that time.
+     * Simple constructor.
      * @param app
      */
  public GUIManager(FizXBaseApp app){
