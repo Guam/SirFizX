@@ -79,6 +79,7 @@ public class GUIManager extends AbstractAppState implements ScreenController{
     public void onStartScreen() {
         
         System.out.println("onStartScreen");
+        //ch is the crosshairs overlay
         if(ch!=null){
         this.app.getGuiNode().detachChild(ch);
         }
@@ -143,12 +144,20 @@ public class GUIManager extends AbstractAppState implements ScreenController{
     
     public void updateUpCamAngle(){
         int angle = this.app.getCamUp();
-        this.nifty.getScreen("gameplay").findElementByName("camUpAngleLayer").findElementByName("camUpAngleText").getRenderer(TextRenderer.class).setText("Cam Angle: "+angle+" degrees   ");
+        this.nifty.getScreen("gameplay")
+                .findElementByName("camUpAngleLayer")
+                .findElementByName("camUpAngleText")
+                .getRenderer(TextRenderer.class)
+                .setText("Cam Angle: "+angle+" degrees   ");
     }
     
     public void addToScore(int points){
         
-        this.nifty.getScreen("gameplay").findElementByName("score").findElementByName("scoretext").getRenderer(TextRenderer.class).setText("     "+this.app.score+" points");
+        this.nifty.getScreen("gameplay")
+                .findElementByName("score")
+                .findElementByName("scoretext")
+                .getRenderer(TextRenderer.class)
+                .setText("     "+this.app.score+" points");
     }
     
     @Override
