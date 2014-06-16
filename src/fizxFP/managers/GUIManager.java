@@ -11,6 +11,8 @@ import com.jme3.font.BitmapText;
 import com.jme3.niftygui.NiftyJmeDisplay;
 import com.jme3.scene.Node;
 import de.lessvoid.nifty.Nifty;
+import de.lessvoid.nifty.elements.Element;
+import de.lessvoid.nifty.elements.render.ImageRenderer;
 import de.lessvoid.nifty.elements.render.TextRenderer;
 import de.lessvoid.nifty.render.NiftyImage;
 import de.lessvoid.nifty.screen.Screen;
@@ -44,11 +46,25 @@ public class GUIManager extends AbstractAppState implements ScreenController{
  }
   public void changeTitleScreen(String title, String logoName) {
       NiftyImage newImage = nifty.getRenderEngine().createImage(nifty.getCurrentScreen(),"Textures/gui/"+logoName+".png", false);
-      // code below not working
-      //this.nifty.getScreen("start").findElementByName("startLayer").findElementByName("logo").getRenderer(ImageRenderer.class).setImage(newImage);
-  }
-  public void changeTitleScreen(String title) {
+      // find the element with it's id
+      Element element = nifty.getScreen("start").findElementByName("logo");
 
+      // change the image with the ImageRenderer
+      element.getRenderer(ImageRenderer.class).setImage(newImage);
+      
+      this.nifty.getScreen("start")
+                .findElementByName("logo")
+                .findElementByName("text")
+                .getRenderer(TextRenderer.class)
+                .setText(title);
+  }
+  public void changeTitleScreen(String logoName) {
+      NiftyImage newImage = nifty.getRenderEngine().createImage(nifty.getCurrentScreen(),"Textures/gui/"+logoName+".png", false);
+      // find the element with it's id
+      Element element = nifty.getScreen("start").findElementByName("logo");
+
+      // change the image with the ImageRenderer
+      element.getRenderer(ImageRenderer.class).setImage(newImage);
   }
   
   private void initNifty(){

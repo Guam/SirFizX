@@ -5,7 +5,7 @@
   <!-- +++++++++++++++++++++++++++++++++++++++ -->
     <screen id="start" controller="fizxFP.managers.GUIManager">
         <layer name="startLayer" id="layer" backgroundColor="#0008" childLayout="center">  
-                <image name="logo" id="image" filename="Textures/gui/FizX_FP.png" align="center" valign="center" childLayout="center" visibleToMouse="true">
+                <image name="logo" id="logo" filename="Textures/gui/FizX_FP.png" align="center" valign="center" childLayout="center" visibleToMouse="true">
                     <interact onClick="gotoScreenTwo()"/>
                     <text id="text" font="Fonts/q.fnt" color="#ffff" text="Click to Continue" align="center" valign="center" />
                     <effect>
@@ -14,8 +14,8 @@
                     <onHover name="textSize" maxSize="220%">
                     <hover hoverFalloffType="linear"
                     hoverFalloffConstraint="both"
-                    hoverWidth="200%"
-                    hoverHeight="200%" />
+                    hoverWidth="0%"
+                    hoverHeight="0%" />
                     </onHover>
                     </effect>
                 </image>

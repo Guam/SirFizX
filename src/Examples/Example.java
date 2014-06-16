@@ -35,6 +35,7 @@ public class Example extends FizXBaseApp {
        super.simpleInitApp();
        //Add your initialization code here. Use type "this." to see 
        //some convenient methods
+       this.guiManager.changeTitleScreen("Edward Little Rocks","GBE");
        this.getPlayerManager().player_FP.lookAt(new Vector3f(0f, 20f, -53f));
        this.addAmbientSound("chill.wav");
        this.addAmbientSound("fire.wav", new Vector3f(17,13f,-47));
