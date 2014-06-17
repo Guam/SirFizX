@@ -74,7 +74,7 @@ public class GUIManager extends AbstractAppState implements ScreenController{
                                                         this.app.getAudioRenderer(),
                                                         this.app.getGuiViewPort());
         nifty = niftyDisplay.getNifty();
-        nifty.fromXml("Interface/ghs.xml", "start", this);
+        nifty.fromXml("Interface/gui.xml", "start", this);
    
         // attach the nifty display to the gui view port as a processor
         this.app.getGuiViewPort().addProcessor(niftyDisplay);
