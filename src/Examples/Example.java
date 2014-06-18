@@ -8,6 +8,7 @@ package Examples;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.RenderManager;
 import fizxFP.*;
+import static fizxFP.FizXBaseApp.ANIM_YOYO_X;
 
 /**
  *
@@ -35,12 +36,13 @@ public class Example extends FizXBaseApp {
        super.simpleInitApp();
        //Add your initialization code here. Use type "this." to see 
        //some convenient methods
-       this.guiManager.changeTitleScreen("Edward Little Rocks","GBE");
+       this.guiManager.changeTitleScreen("Play to Learn","GBE");
        this.getPlayerManager().player_FP.lookAt(new Vector3f(0f, 20f, -53f));
        this.addAmbientSound("chill.wav");
        this.addAmbientSound("fire.wav", new Vector3f(17,13f,-47));
        this.addBuiding("woodHouse", new Vector3f(0f,0f,-50f));
        this.addGhost("ghost1",new Vector3f(-20f,10f,-30f),"ghostKill.wav",ANIM_YOYO_X);
+       this.addGhost("ghost1",new Vector3f(-50f,10f,-10f),"ghostKill.wav",ANIM_YOYO_X);
        this.addTarget("oldFence", new Vector3f(28.5f,0f,-53.1f), INDESTRUCTABLE, 0);
        this.addTarget("oldFence", new Vector3f(-30f,0f,-50f), INDESTRUCTABLE, 0); 
        this.addDynamicBoxTarget("barrel",new Vector3f(30f,1.5f,-51f),"woodBarrelHit.wav",20f);
